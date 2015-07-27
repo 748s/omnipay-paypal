@@ -59,6 +59,11 @@ class ProGateway extends AbstractGateway
         return $this->createRequest('\Omnipay\PayPal\Message\ProAuthorizeRequest', $parameters);
     }
 
+    public function referenceAuthorization(array $parameters = array())
+    {
+        return $this->createRequest('\Omnipay\PayPal\Message\ProReferenceAuthorizationRequest', $parameters);
+    }
+
     public function void(array $parameters = array())
     {
         return $this->createRequest('\Omnipay\PayPal\Message\ProVoidRequest', $parameters);

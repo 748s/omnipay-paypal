@@ -23,11 +23,20 @@
             "homepage": "https://github.com/thephpleague/omnipay-paypal/contributors"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Nilead/omnipay-common",
+            "reference": "5ed6189c56be29503044a121407e3baefc5000a9"
+        }
+    ],
     "autoload": {
         "psr-4": { "Omnipay\\PayPal\\" : "src/" }
     },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
-        "omnipay/common": "~2.0"
+        "omnipay/common": "dev-master"
     },
     "require-dev": {
         "omnipay/tests": "~2.0"
